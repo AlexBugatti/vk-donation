@@ -133,7 +133,8 @@ class DonationWizardController: UIViewController {
                 case "title": title = wizardableModel.getValue()
                 case "target": target = wizardableModel.getValue()
                 case "description": description = wizardableModel.getValue()
-                case "price": description = wizardableModel.getValue()
+                case "price": price = wizardableModel.getValue()
+                case "author": author = wizardableModel.getValue()
                 case "image": image = (subview as? InputImageView)?.imageView.image
                     
                 default:
@@ -145,7 +146,7 @@ class DonationWizardController: UIViewController {
         }
         
         if let titleString = title, let targetString = target, let descriptionString = description, let image = image, let author = author, let price = price {
-            let donation = Donation.init(title: titleString, target: targetString, author: author, image: image, price: price)
+            let donation = Donation(title: titleString, target: targetString, author: author, image: image, description: descriptionString, price: price)
             
             return donation
         }
@@ -159,6 +160,10 @@ class DonationWizardController: UIViewController {
            self.performSegue(withIdentifier: "toPrepare", sender: donation)
         } else {
             let alert = UIAlertController.init(title: "Ошибка", message: "Не все поля заполнены", preferredStyle: .alert)
+            let action = UIAlertAction.init(title: "OK", style: .default) { (action) in
+            }
+            alert.addAction(action)
+
             self.present(alert, animated: true, completion: nil)
         }
         

@@ -13,6 +13,7 @@ struct Donation {
     var target: String
     var author: String
     var image: UIImage
+    var description: String
     var price: String
 }
 

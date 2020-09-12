@@ -21,7 +21,13 @@ class DonationSnippetView: NibView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var helpButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     
+    func setupUI(donation: Donation) {
+        self.titleLabel.text = donation.title
+        self.descriptionLabel.text = donation.description
+        self.imageView.image = donation.image
+    }
     
     /*
     // Only override draw() if you perform custom drawing.

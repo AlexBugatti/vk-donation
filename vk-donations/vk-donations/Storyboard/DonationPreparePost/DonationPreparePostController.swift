@@ -34,6 +34,9 @@ class DonationPreparePostController: UIViewController {
         super.viewDidLoad()
 
         showSeparateView()
+        if let don = self.donation {
+            snippetView.setupUI(donation: don)
+        }
         textView.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
