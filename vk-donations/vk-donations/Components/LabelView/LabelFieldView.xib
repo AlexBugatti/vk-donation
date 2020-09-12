@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabelFieldView" customModule="vk_donations" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="RS5-MC-xxF" id="lue-fh-B8L"/>
+                <outlet property="titleLabel" destination="NS0-An-QCr" id="ybi-yO-mFt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bgr-9h-rTh">
+                    <rect key="frame" x="12" y="12" width="390" height="130"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS0-An-QCr">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="16.5"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                            <color key="textColor" name="PlaceholderTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNr-Xw-5f7">
+                            <rect key="frame" x="0.0" y="86" width="390" height="44"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RS5-MC-xxF" customClass="MainTextView" customModule="vk_donations" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-down" translatesAutoresizingMaskIntoConstraints="NO" id="NGD-xv-LPr">
+                                    <rect key="frame" x="361" y="15" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="rWd-wJ-kfp"/>
+                                        <constraint firstAttribute="width" constant="14" id="rbU-OC-gGk"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="RS5-MC-xxF" secondAttribute="trailing" id="8Zo-t6-WKd"/>
+                                <constraint firstAttribute="trailing" secondItem="NGD-xv-LPr" secondAttribute="trailing" constant="15" id="BVN-7r-BXh"/>
+                                <constraint firstAttribute="height" constant="44" id="Jc3-Ba-LIk"/>
+                                <constraint firstAttribute="bottom" secondItem="RS5-MC-xxF" secondAttribute="bottom" id="dEf-Of-qO8"/>
+                                <constraint firstItem="NGD-xv-LPr" firstAttribute="centerY" secondItem="vNr-Xw-5f7" secondAttribute="centerY" id="jTz-XI-tOQ"/>
+                                <constraint firstItem="RS5-MC-xxF" firstAttribute="leading" secondItem="vNr-Xw-5f7" secondAttribute="leading" id="sCu-EU-Lo6"/>
+                                <constraint firstItem="RS5-MC-xxF" firstAttribute="top" secondItem="vNr-Xw-5f7" secondAttribute="top" id="u6e-vY-eYP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bgr-9h-rTh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="8R1-FO-3ug"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bgr-9h-rTh" secondAttribute="trailing" constant="12" id="CO8-Rr-IOk"/>
+                <constraint firstItem="bgr-9h-rTh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="LK8-Gz-J5Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bgr-9h-rTh" secondAttribute="bottom" constant="12" id="PrR-49-Tbd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="376.33928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron-down" width="14" height="7"/>
+        <namedColor name="PlaceholderTextColor">
+            <color red="0.50599998235702515" green="0.54900002479553223" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

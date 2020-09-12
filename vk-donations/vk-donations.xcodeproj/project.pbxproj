@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0B9BD8250C9F08007789B7 /* LabelFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BD7250C9F07007789B7 /* LabelFieldView.swift */; };
+		FA0B9BDA250C9F1C007789B7 /* LabelFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0B9BD9250C9F1C007789B7 /* LabelFieldView.xib */; };
+		FA0B9BDC250CA764007789B7 /* Extension+KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BDB250CA764007789B7 /* Extension+KeyboardObserver.swift */; };
+		FA0B9BDE250CA9BF007789B7 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BDD250CA9BF007789B7 /* Extension+UIViewController.swift */; };
+		FA0B9BE1250CB31D007789B7 /* DonationAdditionalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BE0250CB31D007789B7 /* DonationAdditionalController.swift */; };
+		FA0B9BE4250CB3C2007789B7 /* DonationPreparePostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BE3250CB3C2007789B7 /* DonationPreparePostController.swift */; };
+		FA0B9BE7250CBFEB007789B7 /* DonationSnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BE6250CBFEB007789B7 /* DonationSnippetView.swift */; };
+		FA0B9BE9250CBFFD007789B7 /* DonationSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0B9BE8250CBFFC007789B7 /* DonationSnippetView.xib */; };
+		FA0B9BEB250CCE65007789B7 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B9BEA250CCE65007789B7 /* Donation.swift */; };
+		FA3432E2250B886000FDFC34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3432E1250B886000FDFC34 /* AppDelegate.swift */; };
+		FA3432E9250B886000FDFC34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3432E7250B886000FDFC34 /* Main.storyboard */; };
+		FA3432EB250B886600FDFC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3432EA250B886600FDFC34 /* Assets.xcassets */; };
+		FA3432EE250B886600FDFC34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3432EC250B886600FDFC34 /* LaunchScreen.storyboard */; };
+		FA3432F8250B998500FDFC34 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3432F7250B998500FDFC34 /* SFProDisplay-Regular.ttf */; };
+		FA8D4EBC250BB28300087A24 /* DonationTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D4EBB250BB28300087A24 /* DonationTypeController.swift */; };
+		FA8D4EBE250BB45C00087A24 /* Extension_Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D4EBD250BB45C00087A24 /* Extension_Storyboard.swift */; };
+		FA8D4EC1250BB49E00087A24 /* DonationTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D4EC0250BB49E00087A24 /* DonationTypeView.swift */; };
+		FA8D4EC3250BB52400087A24 /* DonationTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8D4EC2250BB52400087A24 /* DonationTypeView.xib */; };
+		FA8D4EC5250BB80900087A24 /* SFProDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8D4EC4250BB80900087A24 /* SFProDisplay-Semibold.ttf */; };
+		FA8D4EC8250BBA1300087A24 /* DonationTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D4EC7250BBA1300087A24 /* DonationTypeModel.swift */; };
+		FA8D4ECB250BC6F100087A24 /* TTCommons-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8D4ECA250BC6F000087A24 /* TTCommons-DemiBold.ttf */; };
+		FA8D4ECD250BC9E900087A24 /* TT Commons DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA8D4ECC250BC9E900087A24 /* TT Commons DemiBold.otf */; };
+		FA8EA5AB250BEA1900E3C22D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5AA250BEA1900E3C22D /* TextFieldView.swift */; };
+		FA8EA5AD250BEA2D00E3C22D /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8EA5AC250BEA2D00E3C22D /* TextFieldView.xib */; };
+		FA8EA5B0250C201400E3C22D /* MainTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8EA5AF250C201300E3C22D /* MainTextView.xib */; };
+		FA8EA5B2250C203400E3C22D /* MainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5B1250C203400E3C22D /* MainTextView.swift */; };
+		FA8EA5B4250C278400E3C22D /* DonationWizardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5B3250C278400E3C22D /* DonationWizardModel.swift */; };
+		FA8EA5B7250C28B500E3C22D /* InputImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5B6250C28B500E3C22D /* InputImageView.swift */; };
+		FA8EA5B9250C28C400E3C22D /* InputImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8EA5B8250C28C400E3C22D /* InputImageView.xib */; };
+		FA8EA5BB250C2CC400E3C22D /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5BA250C2CC400E3C22D /* Extension+UIView.swift */; };
+		FA8EA5BD250C31E400E3C22D /* Wizardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5BC250C31E400E3C22D /* Wizardable.swift */; };
+		FA8EA5C1250C404A00E3C22D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EA5C0250C404A00E3C22D /* ImagePicker.swift */; };
+		FA9986A0250BD88200E092D7 /* Extension+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99869F250BD88200E092D7 /* Extension+NavigationBar.swift */; };
+		FA9986A3250BE03B00E092D7 /* DonationWizardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9986A2250BE03B00E092D7 /* DonationWizardController.swift */; };
+		FAA1B2AD250B9CB800BDBE2A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1B2AC250B9CB800BDBE2A /* MainButton.swift */; };
+		FAA1B2AF250B9D0400BDBE2A /* Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1B2AE250B9D0400BDBE2A /* Pallete.swift */; };
+		FAA1B2B2250B9E2C00BDBE2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1B2B1250B9E2C00BDBE2A /* Constants.swift */; };
+		FAA1B2B6250B9EE200BDBE2A /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1B2B5250B9EE200BDBE2A /* MainController.swift */; };
+		FAAF04FA250BAA7A003C65FF /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF04F9250BAA7A003C65FF /* Extension+Font.swift */; };
+		FAAF04FC250BAD48003C65FF /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAAF04FB250BAD48003C65FF /* SFProDisplay-Medium.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA0B9BD7250C9F07007789B7 /* LabelFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFieldView.swift; sourceTree = "<group>"; };
+		FA0B9BD9250C9F1C007789B7 /* LabelFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelFieldView.xib; sourceTree = "<group>"; };
+		FA0B9BDB250CA764007789B7 /* Extension+KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+KeyboardObserver.swift"; sourceTree = "<group>"; };
+		FA0B9BDD250CA9BF007789B7 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		FA0B9BE0250CB31D007789B7 /* DonationAdditionalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationAdditionalController.swift; sourceTree = "<group>"; };
+		FA0B9BE3250CB3C2007789B7 /* DonationPreparePostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationPreparePostController.swift; sourceTree = "<group>"; };
+		FA0B9BE6250CBFEB007789B7 /* DonationSnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationSnippetView.swift; sourceTree = "<group>"; };
+		FA0B9BE8250CBFFC007789B7 /* DonationSnippetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationSnippetView.xib; sourceTree = "<group>"; };
+		FA0B9BEA250CCE65007789B7 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		FA3432DE250B886000FDFC34 /* vk-donations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vk-donations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3432E1250B886000FDFC34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA3432E8250B886000FDFC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA3432EA250B886600FDFC34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA3432ED250B886600FDFC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA3432EF250B886600FDFC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3432F7250B998500FDFC34 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		FA8D4EBB250BB28300087A24 /* DonationTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTypeController.swift; sourceTree = "<group>"; };
+		FA8D4EBD250BB45C00087A24 /* Extension_Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension_Storyboard.swift; sourceTree = "<group>"; };
+		FA8D4EC0250BB49E00087A24 /* DonationTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTypeView.swift; sourceTree = "<group>"; };
+		FA8D4EC2250BB52400087A24 /* DonationTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationTypeView.xib; sourceTree = "<group>"; };
+		FA8D4EC4250BB80900087A24 /* SFProDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Semibold.ttf"; sourceTree = "<group>"; };
+		FA8D4EC7250BBA1300087A24 /* DonationTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTypeModel.swift; sourceTree = "<group>"; };
+		FA8D4ECA250BC6F000087A24 /* TTCommons-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTCommons-DemiBold.ttf"; sourceTree = "<group>"; };
+		FA8D4ECC250BC9E900087A24 /* TT Commons DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TT Commons DemiBold.otf"; sourceTree = "<group>"; };
+		FA8EA5AA250BEA1900E3C22D /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		FA8EA5AC250BEA2D00E3C22D /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		FA8EA5AF250C201300E3C22D /* MainTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTextView.xib; sourceTree = "<group>"; };
+		FA8EA5B1250C203400E3C22D /* MainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextView.swift; sourceTree = "<group>"; };
+		FA8EA5B3250C278400E3C22D /* DonationWizardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationWizardModel.swift; sourceTree = "<group>"; };
+		FA8EA5B6250C28B500E3C22D /* InputImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageView.swift; sourceTree = "<group>"; };
+		FA8EA5B8250C28C400E3C22D /* InputImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputImageView.xib; sourceTree = "<group>"; };
+		FA8EA5BA250C2CC400E3C22D /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		FA8EA5BC250C31E400E3C22D /* Wizardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizardable.swift; sourceTree = "<group>"; };
+		FA8EA5C0250C404A00E3C22D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FA99869F250BD88200E092D7 /* Extension+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NavigationBar.swift"; sourceTree = "<group>"; };
+		FA9986A2250BE03B00E092D7 /* DonationWizardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationWizardController.swift; sourceTree = "<group>"; };
+		FAA1B2AC250B9CB800BDBE2A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		FAA1B2AE250B9D0400BDBE2A /* Pallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pallete.swift; sourceTree = "<group>"; };
+		FAA1B2B1250B9E2C00BDBE2A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAA1B2B5250B9EE200BDBE2A /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		FAAF04F9250BAA7A003C65FF /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
+		FAAF04FB250BAD48003C65FF /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3432DB250B886000FDFC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0B9BD6250C9EC7007789B7 /* LabelView */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BD7250C9F07007789B7 /* LabelFieldView.swift */,
+				FA0B9BD9250C9F1C007789B7 /* LabelFieldView.xib */,
+			);
+			path = LabelView;
+			sourceTree = "<group>";
+		};
+		FA0B9BDF250CB2E8007789B7 /* DonationAdditionalController */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BE0250CB31D007789B7 /* DonationAdditionalController.swift */,
+			);
+			path = DonationAdditionalController;
+			sourceTree = "<group>";
+		};
+		FA0B9BE2250CB395007789B7 /* DonationPreparePost */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BE3250CB3C2007789B7 /* DonationPreparePostController.swift */,
+			);
+			path = DonationPreparePost;
+			sourceTree = "<group>";
+		};
+		FA0B9BE5250CBFB5007789B7 /* DonationSnippetView */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BE6250CBFEB007789B7 /* DonationSnippetView.swift */,
+				FA0B9BE8250CBFFC007789B7 /* DonationSnippetView.xib */,
+			);
+			path = DonationSnippetView;
+			sourceTree = "<group>";
+		};
+		FA3432D5250B886000FDFC34 = {
+			isa = PBXGroup;
+			children = (
+				FA3432E0250B886000FDFC34 /* vk-donations */,
+				FA3432DF250B886000FDFC34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3432DF250B886000FDFC34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3432DE250B886000FDFC34 /* vk-donations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3432E0250B886000FDFC34 /* vk-donations */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D4EC6250BB9FA00087A24 /* Models */,
+				FAA1B2B3250B9EA400BDBE2A /* Storyboard */,
+				FAA1B2B0250B9D9900BDBE2A /* Extensions */,
+				FAA1B2AA250B9B0700BDBE2A /* Components */,
+				FA3432F5250B996500FDFC34 /* Resources */,
+				FA3432F9250B999400FDFC34 /* Support */,
+				FA3432E7250B886000FDFC34 /* Main.storyboard */,
+				FA3432EC250B886600FDFC34 /* LaunchScreen.storyboard */,
+				FA3432EF250B886600FDFC34 /* Info.plist */,
+			);
+			path = "vk-donations";
+			sourceTree = "<group>";
+		};
+		FA3432F5250B996500FDFC34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA3432F6250B997200FDFC34 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA3432F6250B997200FDFC34 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D4ECA250BC6F000087A24 /* TTCommons-DemiBold.ttf */,
+				FA8D4ECC250BC9E900087A24 /* TT Commons DemiBold.otf */,
+				FA8D4EC9250BC52A00087A24 /* SFPro */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA3432F9250B999400FDFC34 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FA3432E1250B886000FDFC34 /* AppDelegate.swift */,
+				FA8EA5C0250C404A00E3C22D /* ImagePicker.swift */,
+				FA3432EA250B886600FDFC34 /* Assets.xcassets */,
+				FAA1B2AE250B9D0400BDBE2A /* Pallete.swift */,
+				FAA1B2B1250B9E2C00BDBE2A /* Constants.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		FA8D4EBA250BB24800087A24 /* DonationTypeController */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D4EBF250BB48300087A24 /* views */,
+				FA8D4EBB250BB28300087A24 /* DonationTypeController.swift */,
+			);
+			path = DonationTypeController;
+			sourceTree = "<group>";
+		};
+		FA8D4EBF250BB48300087A24 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D4EC0250BB49E00087A24 /* DonationTypeView.swift */,
+				FA8D4EC2250BB52400087A24 /* DonationTypeView.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		FA8D4EC6250BB9FA00087A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D4EC7250BBA1300087A24 /* DonationTypeModel.swift */,
+				FA0B9BEA250CCE65007789B7 /* Donation.swift */,
+				FA8EA5B3250C278400E3C22D /* DonationWizardModel.swift */,
+				FA8EA5BC250C31E400E3C22D /* Wizardable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA8D4EC9250BC52A00087A24 /* SFPro */ = {
+			isa = PBXGroup;
+			children = (
+				FA3432F7250B998500FDFC34 /* SFProDisplay-Regular.ttf */,
+				FAAF04FB250BAD48003C65FF /* SFProDisplay-Medium.ttf */,
+				FA8D4EC4250BB80900087A24 /* SFProDisplay-Semibold.ttf */,
+			);
+			path = SFPro;
+			sourceTree = "<group>";
+		};
+		FA8EA5A9250BE95F00E3C22D /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EA5AA250BEA1900E3C22D /* TextFieldView.swift */,
+				FA8EA5AC250BEA2D00E3C22D /* TextFieldView.xib */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		FA8EA5AE250C1FF300E3C22D /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EA5AF250C201300E3C22D /* MainTextView.xib */,
+				FA8EA5B1250C203400E3C22D /* MainTextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		FA8EA5B5250C286D00E3C22D /* InputImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EA5B6250C28B500E3C22D /* InputImageView.swift */,
+				FA8EA5B8250C28C400E3C22D /* InputImageView.xib */,
+			);
+			path = InputImageView;
+			sourceTree = "<group>";
+		};
+		FA9986A1250BDFDA00E092D7 /* DonationWizardController */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EA5A9250BE95F00E3C22D /* Fields */,
+				FA9986A2250BE03B00E092D7 /* DonationWizardController.swift */,
+			);
+			path = DonationWizardController;
+			sourceTree = "<group>";
+		};
+		FAA1B2AA250B9B0700BDBE2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BE5250CBFB5007789B7 /* DonationSnippetView */,
+				FA0B9BD6250C9EC7007789B7 /* LabelView */,
+				FA8EA5B5250C286D00E3C22D /* InputImageView */,
+				FA8EA5AE250C1FF300E3C22D /* TextView */,
+				FAA1B2AB250B9B1100BDBE2A /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FAA1B2AB250B9B1100BDBE2A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1B2AC250B9CB800BDBE2A /* MainButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		FAA1B2B0250B9D9900BDBE2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BDB250CA764007789B7 /* Extension+KeyboardObserver.swift */,
+				FAAF04F9250BAA7A003C65FF /* Extension+Font.swift */,
+				FA99869F250BD88200E092D7 /* Extension+NavigationBar.swift */,
+				FA8D4EBD250BB45C00087A24 /* Extension_Storyboard.swift */,
+				FA8EA5BA250C2CC400E3C22D /* Extension+UIView.swift */,
+				FA0B9BDD250CA9BF007789B7 /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAA1B2B3250B9EA400BDBE2A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B9BE2250CB395007789B7 /* DonationPreparePost */,
+				FA0B9BDF250CB2E8007789B7 /* DonationAdditionalController */,
+				FA9986A1250BDFDA00E092D7 /* DonationWizardController */,
+				FA8D4EBA250BB24800087A24 /* DonationTypeController */,
+				FAA1B2B4250B9EBD00BDBE2A /* MainController */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FAA1B2B4250B9EBD00BDBE2A /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1B2B5250B9EE200BDBE2A /* MainController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3432DD250B886000FDFC34 /* vk-donations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3432F2250B886600FDFC34 /* Build configuration list for PBXNativeTarget "vk-donations" */;
+			buildPhases = (
+				FA3432DA250B886000FDFC34 /* Sources */,
+				FA3432DB250B886000FDFC34 /* Frameworks */,
+				FA3432DC250B886000FDFC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vk-donations";
+			productName = "vk-donations";
+			productReference = FA3432DE250B886000FDFC34 /* vk-donations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3432D6250B886000FDFC34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = AlexBugatti;
+				TargetAttributes = {
+					FA3432DD250B886000FDFC34 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FA3432D9250B886000FDFC34 /* Build configuration list for PBXProject "vk-donations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA3432D5250B886000FDFC34;
+			productRefGroup = FA3432DF250B886000FDFC34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3432DD250B886000FDFC34 /* vk-donations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3432DC250B886000FDFC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8EA5AD250BEA2D00E3C22D /* TextFieldView.xib in Resources */,
+				FA8D4EC3250BB52400087A24 /* DonationTypeView.xib in Resources */,
+				FA0B9BE9250CBFFD007789B7 /* DonationSnippetView.xib in Resources */,
+				FA8EA5B0250C201400E3C22D /* MainTextView.xib in Resources */,
+				FA3432EE250B886600FDFC34 /* LaunchScreen.storyboard in Resources */,
+				FA0B9BDA250C9F1C007789B7 /* LabelFieldView.xib in Resources */,
+				FA8D4EC5250BB80900087A24 /* SFProDisplay-Semibold.ttf in Resources */,
+				FA8D4ECB250BC6F100087A24 /* TTCommons-DemiBold.ttf in Resources */,
+				FA3432EB250B886600FDFC34 /* Assets.xcassets in Resources */,
+				FA8D4ECD250BC9E900087A24 /* TT Commons DemiBold.otf in Resources */,
+				FA3432E9250B886000FDFC34 /* Main.storyboard in Resources */,
+				FA8EA5B9250C28C400E3C22D /* InputImageView.xib in Resources */,
+				FA3432F8250B998500FDFC34 /* SFProDisplay-Regular.ttf in Resources */,
+				FAAF04FC250BAD48003C65FF /* SFProDisplay-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3432DA250B886000FDFC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8EA5B2250C203400E3C22D /* MainTextView.swift in Sources */,
+				FA8EA5BB250C2CC400E3C22D /* Extension+UIView.swift in Sources */,
+				FAAF04FA250BAA7A003C65FF /* Extension+Font.swift in Sources */,
+				FA0B9BE4250CB3C2007789B7 /* DonationPreparePostController.swift in Sources */,
+				FA8EA5B4250C278400E3C22D /* DonationWizardModel.swift in Sources */,
+				FA0B9BEB250CCE65007789B7 /* Donation.swift in Sources */,
+				FA8EA5BD250C31E400E3C22D /* Wizardable.swift in Sources */,
+				FAA1B2AD250B9CB800BDBE2A /* MainButton.swift in Sources */,
+				FA9986A3250BE03B00E092D7 /* DonationWizardController.swift in Sources */,
+				FA0B9BDC250CA764007789B7 /* Extension+KeyboardObserver.swift in Sources */,
+				FA0B9BDE250CA9BF007789B7 /* Extension+UIViewController.swift in Sources */,
+				FA8EA5AB250BEA1900E3C22D /* TextFieldView.swift in Sources */,
+				FA9986A0250BD88200E092D7 /* Extension+NavigationBar.swift in Sources */,
+				FA8D4EBE250BB45C00087A24 /* Extension_Storyboard.swift in Sources */,
+				FAA1B2AF250B9D0400BDBE2A /* Pallete.swift in Sources */,
+				FA3432E2250B886000FDFC34 /* AppDelegate.swift in Sources */,
+				FAA1B2B2250B9E2C00BDBE2A /* Constants.swift in Sources */,
+				FA8D4EC1250BB49E00087A24 /* DonationTypeView.swift in Sources */,
+				FA8D4EBC250BB28300087A24 /* DonationTypeController.swift in Sources */,
+				FA8EA5B7250C28B500E3C22D /* InputImageView.swift in Sources */,
+				FA0B9BE1250CB31D007789B7 /* DonationAdditionalController.swift in Sources */,
+				FA8EA5C1250C404A00E3C22D /* ImagePicker.swift in Sources */,
+				FA0B9BE7250CBFEB007789B7 /* DonationSnippetView.swift in Sources */,
+				FAA1B2B6250B9EE200BDBE2A /* MainController.swift in Sources */,
+				FA0B9BD8250C9F08007789B7 /* LabelFieldView.swift in Sources */,
+				FA8D4EC8250BBA1300087A24 /* DonationTypeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA3432E7250B886000FDFC34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3432E8250B886000FDFC34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA3432EC250B886600FDFC34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA3432ED250B886600FDFC34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA3432F0250B886600FDFC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA3432F1250B886600FDFC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA3432F3250B886600FDFC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "vk-donations/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abugaev.vk-donations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA3432F4250B886600FDFC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "vk-donations/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abugaev.vk-donations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3432D9250B886000FDFC34 /* Build configuration list for PBXProject "vk-donations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3432F0250B886600FDFC34 /* Debug */,
+				FA3432F1250B886600FDFC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3432F2250B886600FDFC34 /* Build configuration list for PBXNativeTarget "vk-donations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3432F3250B886600FDFC34 /* Debug */,
+				FA3432F4250B886600FDFC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA3432D6250B886000FDFC34 /* Project object */;
+}

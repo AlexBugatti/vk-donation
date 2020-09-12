@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTextView" customModule="vk_donations" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Dik-9J-UAB" id="CcH-Co-VyH"/>
+                <outlet property="textView" destination="0ds-N5-9R3" id="Jii-bt-ifF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-9J-UAB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Lorem ipsum dolor sit " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ds-N5-9R3">
+                            <rect key="frame" x="12" y="12" width="390" height="128"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0ds-N5-9R3" secondAttribute="trailing" constant="12" id="bEm-Gs-59T"/>
+                        <constraint firstItem="0ds-N5-9R3" firstAttribute="top" secondItem="Dik-9J-UAB" secondAttribute="top" constant="12" id="ccu-PA-Mxx"/>
+                        <constraint firstAttribute="bottom" secondItem="0ds-N5-9R3" secondAttribute="bottom" constant="12" id="jKE-BJ-KfO"/>
+                        <constraint firstItem="0ds-N5-9R3" firstAttribute="leading" secondItem="Dik-9J-UAB" secondAttribute="leading" constant="12" id="r1y-Ib-b4Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dik-9J-UAB" secondAttribute="trailing" id="9u2-mk-7W7"/>
+                <constraint firstItem="Dik-9J-UAB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A0t-xG-VPH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dik-9J-UAB" secondAttribute="bottom" id="HkY-Cw-Aiy"/>
+                <constraint firstItem="Dik-9J-UAB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y41-1g-iYs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="334.82142857142856"/>
+        </view>
+    </objects>
+</document>
